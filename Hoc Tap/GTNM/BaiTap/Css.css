@@ -1,0 +1,158 @@
+/* Đây là của trang trí không phải bài học */
+.title{
+    text-align: center;
+    background: linear-gradient(pink, blue);
+    padding: 20px ;
+}
+
+.main{
+    border: solid 2px tomato;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Bắt đầu bài học */
+/* # id, . là class */
+/* Màu chữ */
+#color {
+    color: aqua;
+}
+
+/* Màu nền */
+#background-color{
+    background-color:limegreen;
+}
+
+/* Kích thước */
+#height-width{
+    height:150px;
+    width:250px;
+}
+
+/* Viền */
+#border{
+    border: solid 2px green;
+}
+
+/* Bo góc */
+#border-radius{
+    border-radius: 100px;
+}
+
+/* Khoảng cách với viền */
+#padding{
+    border: solid 2px green;
+    padding: 50px;
+}
+
+/* Khoảng cách với nội dung khác */
+#margin{
+    margin:100px
+}
+
+/* Xoay nội dung */
+#transform-rotate{
+    transform: rotate(80deg);
+}
+
+/* Làm mờ */
+#filter-blur{
+    filter: blur(1px);
+}
+
+/* Nhạt màu */
+#filter-grayscale{
+    filter: grayscale(60%);
+}
+
+/* Độ trong suốt */
+#filter-opacity{
+    filter: opacity(30%);
+}
+
+/* Độ sáng màu */
+#filter-brightness{
+    filter: brightness(30%);
+}
+
+/* Độ bão hòa màu */
+#filter-saturate{
+    filter: saturate(30%);
+}
+
+/* Độ tương phản */
+#filter-contrast{
+    filter: contrast(200%);
+}
+
+/* Đổ màu */
+#background-linearGradient{
+    background: linear-gradient(45deg,orange, red);
+    margin: 10px;
+    padding: 20px ;
+}
+
+/* Nhóm phần nhỏ nội dung */
+#span{
+    color: red;
+}
+
+/* Kiểu in nghiên */
+#font-style{
+    font-style: italic;
+}
+
+/* In đậm */
+#font-weight{
+    font-weight: bold;
+}
+
+/* Font chữ */
+#font-family {
+    font-family: Courier New;
+}
+
+/* Điều hướng ảnh */
+#float {
+    width: 10%; 
+    float: right;
+}
+
+/* Làm việc với grid */
+.wrapper{
+    display: grid;
+    border: 2px solid teal;
+}
+
+/* grid xử lý cột và dòng */
+.dieuChinhCotDong{
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 50px 50px;
+}
+
+/* 2 cột 3 dòng */
+.tomNhanhDongCot_3cot_2dong{
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+/* Sử dụng cách phần tử với margin */
+.voiMargin{
+    margin: 20px;
+}
+
+/* Cách phần tử của gap */
+.voiGap{
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    gap:10px 10px;
+}
+
+/* Thiết lập 3 dòng 3 cột */
+.baoPhu{
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+/* Thiết lập cho item 1 bao phủ */
+.baoPhuCuaItem1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}

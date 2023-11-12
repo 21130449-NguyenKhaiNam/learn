@@ -1,0 +1,94 @@
+/* Begin: CSS for exercise 3 */
+
+#ex3-work {
+    padding: 0 10%;
+}
+
+/* Begin: General class */
+.ex3-color-text {
+    color: hsl(24deg 3% 70%);
+}
+
+.ex3-margin-top {
+    margin-top: 12px;
+}
+
+.ex3-margin-bottom {
+    margin-bottom: 12px;
+}
+/* End: General class */
+
+.ex3-header {
+    font-size: 32px;
+}
+
+.ex3-slogan {
+    padding: 20px 0;
+}
+
+.ex3-content {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Begin: Content item 1 */
+.ex3-content-item1 {
+    padding-right: 24px;
+}
+
+.ex3-logo-img {
+    border-radius: 4%;
+    width: 102%;
+}
+
+.ex3-figuregation-title {
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 16px;
+}
+/* End: Content item 1 */
+
+/* Begin: Content item 2 */
+.ex3-nav {
+    display: flex;
+}
+
+.ex3-nav-img {
+    border-radius: 4px;
+}
+
+.ex3-nav-content {
+    display: block;
+    margin-left: 16px;
+}
+
+.ex3-nav-header {
+    margin-top: 4px;
+}
+
+.ex3-nav-a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.ex3-nav-text {
+    padding-top: 16px;
+}
+/* End: Content item 2 */
+
+.ex3-boder-red {
+    border: 1px dashed red;
+}
+/* End: CSS for exercise 3 */
+
+/* display less than 942px */
+@media (max-width: 942px) {
+    .ex3-nav {
+        border: 1px solid #000;
+    }
+
+    .ex3-content {
+        display: block;
+    }
+}

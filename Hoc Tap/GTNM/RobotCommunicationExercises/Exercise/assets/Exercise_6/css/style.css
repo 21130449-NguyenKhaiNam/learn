@@ -1,0 +1,207 @@
+/* General class */
+
+
+#ex6-work {
+    font-size: 16px;
+    padding: 0 8px;
+}
+
+.ex6-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ex6-header-logo{
+}
+
+.ex6-slogan {
+}
+
+.ex6-header-nav{
+    text-align: right;
+}
+
+.ex6-header-nav-btn{
+
+}
+
+.ex6-btn{
+    background-color: #817a7b;
+    border: none;
+    padding: 12px 28px;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.ex6-header-nav-subnav{
+
+}
+
+.ex6-subnav{
+    border-right: 2px solid #000;
+    padding: 0 4px;
+}
+
+.ex6-subnav:last-child {
+    border: none;
+}
+
+.ex6-nav{
+    border: 2px solid #333;
+    padding: 12px;
+}
+
+.ex6-nav a {
+    border-right: 2px solid red;
+    color: red;
+    text-decoration: none;
+    padding: 0 8px;
+}
+
+.ex6-nav a:last-child {
+    border: none;
+}
+
+.ex6-content{
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.ex6-content-main {
+
+}
+
+.ex6-main-header {
+    border-bottom: 1px solid #333;
+    margin-bottom: 8px;
+}
+
+.ex6-product {
+    display: flex;
+}
+
+.ex6-product-img {
+    background-color: #817a7b;
+    padding: 15%;
+    margin-right: 16px;
+}
+
+.ex6-product-img h4 {
+    color: #fff;
+    text-align: center;
+    padding: 50% 0;
+    font-size: 180%;
+}
+
+.ex6-product-introduct {
+
+}
+
+.ex6-introduct-header {
+    margin-bottom: 12px;
+}
+
+.ex6-product-other {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ccc;
+    padding: 0 0 12px 12px;
+    
+}
+
+.ex6-box {
+    flex-basis: auto;
+    background-color: #817a7b;
+    padding: 8%;
+    margin: 12px 12px 0 0;
+    display: block;
+}
+
+.ex6-content-news {
+
+}
+
+.ex6-news-header {
+    border-bottom: 1px solid #333;
+    margin-bottom: 8px;
+}
+
+.ex6-new {
+    padding: 8px;
+    border-bottom: 1px dashed red;
+}
+
+.ex6-new:last-child {
+    border: none;
+}
+
+.ex6-new a {
+    text-decoration: none;
+} 
+
+.ex6-contact {
+
+}
+
+.ex6-banner-contact {
+    background-color: #817a7b;
+    padding: 10%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-left: 12px;
+    border: 1px solid #000;
+}
+
+.ex6-banner-contact h4 {
+    color: #fff;
+    font-size: 180%;
+}
+
+.ex6-contact-main {
+
+}
+
+.ex6-contact-main a {
+    display: block;
+}
+
+.ex6-content-sidebar {
+    margin-left: 16px;
+}
+
+.ex6-content-sidebar a {
+    display: block;
+}
+
+.ex6-sidebar-header {
+
+}
+
+.ex6-sidebar-header {
+
+}
+
+.ex6-sidebar-banner {
+    background-color: #817a7b;
+    padding: 10%;
+    border-radius: 8px;
+    border: 1px solid #000;
+    text-align: center;
+    justify-content: center;
+}
+
+.ex6-sidebar-banner h4 {
+    color: #fff;
+    font-size: 140%;
+}
+
+@media (max-width: 600px) {
+    .ex6-sidebar-banner h4 {
+        font-size: 80%;
+    }
+}
+
+

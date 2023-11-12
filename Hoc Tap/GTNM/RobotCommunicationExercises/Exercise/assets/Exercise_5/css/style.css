@@ -1,0 +1,88 @@
+/* General class */
+.ex5-item:hover {
+    opacity: 0.ex5-8;
+    cursor: pointer;
+    background-color: red
+}
+
+.ex5-closeClass {
+    display: none;
+}
+
+.ex5-onClass {
+    display: block;
+}
+
+.ex5-header {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.ex5-nav {
+    background-color: #323232;
+    color: #fff;
+    margin-top: 12px;
+}
+
+.ex5-list-item {
+    display: flex;
+}
+
+.ex5-list-item .ex5-item {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.ex5-list-item .ex5-item p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ex5-list-item-mobile {
+    display: none;
+}
+
+.ex5-content {
+    min-height: 500px;
+    text-align: center;
+}
+
+.ex5-content p {
+    padding: 50% 16px;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+@media (max-width: 479px) {
+   .ex5-list-item {
+       display: none;
+   }
+
+   .ex5-list-item-mobile {
+       display: block;
+   }
+
+   .ex5-list-item-mobile .ex5-list-item-mb {
+       padding: 0 4px;
+   }
+
+   .ex5-list-item-mb .ex5-item-header {
+       display: flex;
+   }
+
+   .ex5-item-header .ex5-item {
+       flex: 2;
+   }
+
+   .ex5-item-header .ex5-icon {
+       padding: 0 8px;
+   }
+
+   .ex5-item-header .ex5-icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: rgb(42, 42, 250)
+   }
+
+    
+}

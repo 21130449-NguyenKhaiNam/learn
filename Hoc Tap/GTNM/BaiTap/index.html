@@ -1,0 +1,719 @@
+<!-- Báo sẽ sử dụng ngôn ngữ html cho máy -->
+<!doctype html>
+<!-- Thông báo các code bên trong sài html cho máy hiểu -->
+<!-- Thẻ là sự khai báo chức năng sử dụng trong html, nó giúp cho máy hiểu sẽ phải làm việc gì khi gặp nó,
+cấu tạo thẻ có hai loại: Thẻ thông thường:<name></name>; Thẻ khuyết(kí hiệu để biết:*): <name> -->
+<!-- Thuộc tính là các thông tin nằm trong thẻ vd: <name attribute> -->
+<!-- Khi đặt tên folder nếu nhiều hơn một chữ cần sử dụng dấu - giữa chúng -->
+<html>
+    <!-- Thông tin về trang web -->
+    <head>
+        <!-- Ngôn ngữ sử dụng là tiếng việt, không có mà sử dụng ngôn ngữ viết sẽ gặp lỗi -->
+        <meta charset="utf-8">
+        <!-- Tiêu đề web -->
+        <title>Học về lập trình web</title>
+        <!-- Liên kết với folder css để css kiểu External, 
+            ngoài ra còn có kiểu Internal: sử dụng thẻ style; và Inline: Sử dụng kiểu là thuộc tính của thẻ -->
+        <link rel="stylesheet" href="Css.css">
+        <!-- Sử dụng javaScipt bằng cách liên kêt đến file ngoài -->
+        <script src="javaScript.js"></script>
+    </head>
+    <!-- Hiển thị lên trang web -->
+    <body>
+
+        <div class="main">
+            <h1 class="title">HTML</h1>
+            <p>- HTML(HyperText Markup Language) được hiểu là ngôn ngữ đánh dấu siêu văn bản. HTML không phải là ngôn ngữ lập trình nó chỉ tạo và định dạng nội dung cho trang web</p>
+
+            <h1 class="title">CSS</h1>
+            <p>- CSS(Cascading Style Sheets) được sử dụng để định dạng lại nội dung trong HTML, hay hiểu đơn giản là ngôn ngữ tạo phong cách cho trang web.</p>
+
+            <h1 class="title">JavaScript</h1>
+            <p>- JavaScript là một ngôn ngữ lập trình động được sử dụng để phát triển web, trong các ứng dụng web, để phát triển trò chơi, v.v. Nó cho phép triển khai các tính năng động trên các trang web không thể thực hiện được chỉ với HTML và CSS</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">HTML Basics</h1>
+            <h3>1. Nút bấm</h3>
+            <!-- Đây là thẻ tạo nút bấm  -->
+            <button>Đây là thẻ tạo nút: button</button> 
+            <button>Nó sẽ không tự xuống dòng</button>
+
+            <h3>2. Thẻ văn bản</h3>
+            <!-- Đây là thẻ tạo đoạn văn -->
+            <P>- Đây là thẻ tạo đoạn văn: p(paragraph).</P>
+            <p>- Nó sẽ tự xuống dòng</p>
+            <!-- *Thẻ xuống dòng-->
+            <button>Khi các thẻ không tự xuống dòng</button>
+            <br>
+            <button>Sử dụng *br(break) để nó xuống</button>
+            <!-- Thẻ tạo kiểu đoạn văn -->
+            <p>- Thẻ em(emphasis) này sẽ giúp <em>in nghiên</em>.  
+            <!-- Thẻ làm nổi bật nội dung -->
+            <br>- Thẻ strong sẽ làm <strong>nổi bật</strong> các thông tin quan trọng</p>
+
+            <h3>3. Thẻ tiêu đề</h3>
+            <!-- Các thẻ tạo tiêu đề -->
+            <h1>- Đây là thẻ tạo tiêu đề: (heading)h?(?=1,2,...).</h1>
+            <h2>- Nó sẽ tự xuống dòng</h2>
+            <h3>- Kích cỡ chữ sẽ thay đổi khi số càng nhỏ</h3>
+            <h4>...</h4>
+
+            <h3>4. Một số định nghĩa trong html</h3>
+            <!-- Phần tử trong html -->
+            <p>- Phần tử trong html được định nghĩa là một đoạn văn bản được đánh dấu để thể hiện theo một cách nào đó.</p>
+            <!-- Tài nguyên trong html -->
+            <p>- Tài nguyên trong html được hiểu là các tài nguyên sử dụng có sẵn để chỉnh sửa cho nó.</p>
+
+            <h3>5. Thẻ chuyển tiếp trang</h3>
+            <!-- Thẻ liên kết và cho phép tương tác, href chính là thuộc tính của thẻ nó né liên kết đến đường dẫn bỏ vào  -->
+            <p>- Đây là thẻ liên kết và có tương tác: a(anchor). Link được truyền vào href="Đường dẫn".
+            <a href="https://www.facebook.com/">Bấm vào sẽ dẫn đến facebook</a></p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">HTML Intermediate</h1>
+            <h3>1. Ảnh trên web</h3>
+            <!-- Thẻ chèn ảnh vào web. -->
+            <p>- Sử dụng img(image) để chèn ảnh vào trong trang web. Truyền link ảnh vào trong thuộc tính src(source) của thẻ. Sử dụng thuộc tính width và height để chỉnh độ rộng và cao của ảnh.
+                <br>488 x 274.5
+            </p>
+            <img src="https://i.pinimg.com/originals/74/77/d3/7477d3a4996748af121a170c875e13ea.jpg" width="488" height= "274.5">
+            <p>- Có thể sử dụng đường dẫn tắt nếu bức ảnh đó đã lưu trên máy VD: /img/earth.png máy sẽ hiểu vào folder img lấy bức ảnh có tên là earth.</p>
+
+            <h3>2. Nhận giá trị người dùng nhập vào</h3>
+            <!-- Thẻ nhận giá trị nhập vào -->
+            <p>- Để nhận giá trị nhập vào thì sử dụng thẻ *input, nó sẽ không tự xuống dòng. Sử dụng thuộc tính type để chọn kiểu nhận vào, typle="Kiểu"</p>
+            <ul>
+                <li>Nhập chuỗi sử dụng text, placeholder kêu biểu thị là nhập chuỗi
+                    <br>    <input type="text" placeholder="Nhập chuỗi">
+                </li>
+                <li>password là kiểu mật khẩu
+                    <br>    <input type="password">
+                </li>
+                <li>Kiểu ngày tháng: date
+                    <br>    <input type="date">
+                </li>
+                <li>...</li>
+            </ul>
+
+            <h3>3. Phân chia nội dung trên web</h3>
+            <!-- Thẻ bao nội dung -->
+            <p>- Nội dung trên web sẽ cần bao lại để phân chia rõ ràng.</p>
+            <div style="border:solid 2px aqua; padding: 5px; margin:1.5px;"><p>- Sử dụng thẻ div(division) bao các thẻ bất kỳ hay nội dung lại với nhau</p></div>
+            <!-- Cũng bao nội dung nhưng phân biệt là tiêu đề cho người code hiểu -->
+            <header style="border:solid 2px black; padding: 5px; margin:1.5px;"><h3>- Sử dụng thẻ header để bao nội dung là các tiêu đề để coder hiểu</h3></header>
+            <!-- Cũng bao quanh nội dung nhưng là phần cuối của trang web -->
+            <footer style="border:solid 2px blue; padding: 5px; margin:1.5px;"><p>- Sử dụng footer để bao quanh các nội dung cuối trang web</p></footer>
+            <!-- Cũng bao quanh nội dung nhưng là chứa thông tin trong trang web -->
+            <section style="border:solid 2px chartreuse; padding: 5px; margin:1.5px;"><p>- Thẻ section chứa thông tin</p></section>
+            <!-- Chứa các thẻ điều hướng của web -->
+            <nav style="border:solid 2px crimson; padding: 5px; margin:1.5px;"><p>- Thẻ nav(navigation) dùng để bao quanh các thẻ liên quan đến liên kết hoặc điều hướng của trang web</p></nav>
+            <!-- Thẻ bao quanh nội dung chính của web, nó ít cần chỉnh sửa -->
+            <main style="border:solid 2px darkolivegreen; padding: 5px; margin:1.5px;"><p>- Sử dụng thẻ main để bao quanh nội dung chính của trang web</p></main>
+
+            <h3>4. Tạo bảng</h3>
+            <!-- Thẻ tạo bảng -->
+            <p>- Tạo bảng bằng cách sử dụng thẻ: ol(ordered lists); ul(Unorderred lists); trong thẻ phải có li(list item) để hiện thị ký tự của thẻ, nếu không có nội dung sẽ thụt vô chứ không biểu thị ký tự. Có thể sử dụng lồng nhau</p>
+            <ul>
+                <li>Thẻ ul tạo ra ký tự chấm</li>
+                Không xài li
+            </ul>
+            <ol>
+                <li>Thẻ ol tạo ra ký tự số</li>
+            </ol>
+            <ul>
+                <li>
+                    <ol>
+                        <li>Sử dụng các thẻ lồng nhau</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Form HTML</h1>
+            <!-- Nơi nhập dữ liệu -->
+            <h3>1. Tạo form</h3>
+            <p>Form là nơi người dùng nhập thông tin vào. Form là thẻ thông thường. 
+                <br> Sử dụng thẻ fieldset trong thẻ form để tạo viền quanh nội dung.
+                <br> Sử dụng thẻ legend để tạo tiêu đề viền.
+                <br> Sử dụng thẻ label để định nghĩa nhãn của các ô nhập liệu, sử dụng thuộc tính for để định nghĩa thẻ làm việc gì kết hợp với đó là việc sử dụng id trong input để định nghĩa công việc.
+            </p>
+            <!-- Ví dụ sử dụng form -->
+            <form>
+                <!-- Tạo viền -->
+                <fieldset>
+                    <!-- Tạo tiêu đề -->
+                    <legend>Ví dụ</legend>
+                    <label for="User">User:</label><input type="text" placeholder="user">
+                    <br>
+                    <label for="Password">Password:</label> <input type="password" placeholder="password">
+                    <br>
+                    <button>Gửi</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Semantic HTML</h1>
+            <h3>1. Biểu thị trong code để coder khác hiểu</h3>
+            <!-- Biểu thị cho coder hiểu -->
+            <p>- Với các văn bản ngày tháng ta nên để trong thẻ time. 
+                <br>- Địa chỉ nằm trong thẻ address. 
+                <br>- Viết tắt sử dụng thẻ abbr(abbreviation).</p>
+
+            <h3>2. Thẻ làm việc cho nội dung với ảnh</h3>
+            <!-- Các thẻ làm việc với ảnh kèm nội dung -->
+            <p>- Sử dụng thẻ <strong>details</strong> để thu gọn nội dung về thông tin. 
+                <br>- Sử dụng thẻ <strong>summary</strong> thể hiện nội dung ngắn về bức ảnh.
+                <br>- Sử dụng thẻ <strong>figure</strong> bao quanh bức ảnh và tên của nó.
+                <br>- Sử dụng thẻ <strong>figcaption</strong> cho tên ảnh để nó dính gần với ảnh.</p>
+            <figure>
+                <img src="https://mimo.app/i/scream.png" wdith="220" height="277">
+                <figcaption>The Scream</figcaption>
+            </figure>
+            <details>
+                <summary>Painted in 1893 by Edward Munch</summary> 
+                <p>The agonised face in the painting has become one of the most icomic images of art.</p>
+            </details>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Css Basics</h1>
+            <!-- Quy tắc trong css -->
+            <p>- Quy tắc khi css là tính điểm với điểm càng lớn thì nó sẽ thực hiện cái đó và bỏ cái css thấp điểm hơn.</p>
+            <ul>
+                <li>Sử dụng inline: 1000</li>
+                <li>Sử dụng id: 100</li>
+                <li>Sử dụng class: 10</li>
+                <li>Sử dụng thẻ tag: 1</li>
+                <li>Thẻ càng mới thì css sẽ ưu tiên cho thẻ đó</li>
+            </ul>
+            <h3>1. Các kiểu css</h3>
+            <!-- Trang trí cho trang web -->
+            <p>- Css dùng để trang trí cho trang web có các kiểu trang trí: kiểu External: Sử dụng css thông qua file riêng, kiểu Internal: sử dụng thẻ style; và Inline: Sử dụng kiểu là thuộc tính của thẻ</p>
+
+            <h3>2. Css Inline</h3>
+            <!-- Sử dụng css inline -->
+            <p>- Sử dụng css Inline. Được sử dụng như thuộc tính của thẻ. Thêm style="các loại kiểu: giá trị, được ngăn cách với nhau bởi dấu ;"</p>
+            <p style="color: blueviolet">- Color đổi chữ màu đen thông thường thành màu blue violet</p>
+            <p style="background-color: cornflowerblue;">- Background-color đổi nền phía sau chữ thành màu cornflower blue</p>
+
+            <h3>3. Css Internal</h3>
+            <!-- Sử dụng css internal -->
+            <p>- Sử dụng css internal. Thêm thẻ style selector{các loại kiểu: giá trị, được ngăn cách với nhau bởi dấu ;} ở vị trí thích hợp</p>
+            <p class="blueviolet">- Color đổi chữ màu đen thông thường thành màu blue violet</p>
+            <p class=" background-color">- Background-color đổi nền phía sau chữ thành màu cornflower blue</p>
+            <style>
+                .blueviolet{
+                    color: blueviolet
+                }
+                .background-color{
+                    background-color: cornflowerblue;
+                }
+            </style>
+
+            <h3>4. Css External</h3>
+            <p>- Đầu tiên phải sử dụng thẻ link liên kết tới file css khác. Cần phải có thuộc tính rel="stylesheet" để sử dụng và thuộc tính href="đường link tới file css". Nó không cần thẻ style hay thuộc tính chỉ cần selector{} tới phần tử.</p>
+
+            <h3>5. Tạo màu cho nội dung</h3>
+            <!-- Tạo màu chữ -->
+            <p id="color">- Css color tạo màu cho chữ. Có thể sử dụng mã Hex để lấy tên màu.</p>
+
+            <h3>6. Tạo nền cho nội dung</h3>
+            <p>- Sử dụng background để tạo nền cho nội dung.</p>
+            <ul>
+            <!-- Tạo màu nền -->
+                <li id="background-color">Css background-color:(màu sắc); tạo màu nền phía sau nội dung.</li>
+                <li id="background-linearGradient">background: linear-gradient(góc độ đổ màu,màu sắc 1, màu sắc 2,...) tạo màu nền theo kiểu đổ màu.</li>
+            </ul>
+
+            <h3>7. Kích thước nội dung</h3>
+            <!-- Chỉnh sửa kích thước -->
+            <p>- Css height thay đổi độ cao, width thay đổi độ rộng.
+                 <br> Ban đầu:<img src="https://mimo.app/i/scream.png">
+                <br> Khi thay đổi(250pxX150px): <img id="height-width" src="https://mimo.app/i/scream.png">
+            </p> 
+
+            <h3>8. Cách chọn để css</h3>
+            <!-- Chọn để css -->
+            <p>- Selector cách chọn thẻ để css, có loại sử dụng kiểu thuộc tính. Có các loại selector cơ bản:</p>
+            <ol>
+                <!-- Chọn trực tiếp -->
+                <li>Chọn trực tiếp thẻ: (tên thẻ){}. Tất cả nội dung sử dụng thẻ này đều ảnh hưởng.</li>
+                <!-- Chọn thông qua class hoặc id -->
+                <li>Chọn thông qua tên, có hai loại class và id. Class có thể tận dụng lại nghĩa là có thể đặt class cùng nhau và đặt được nhiều class; Id chỉ cho phép đặt một lần, một thẻ chỉ có một id duy nhất.
+                    <br> Class: .(tên class){}; Id: #(id){}
+                </li>
+                <!-- Chọn tất cả -->
+                <li>Sử dụng *{} để css cho tất cả.</li>
+            </ol>
+
+            <h3>9. Bao quanh nội dung</h3>
+            <!-- Xung quanh nội dung trên web -->
+            <p>- Khi hiên thị nội dung được rất nhiều khối bao quanh. Cụ thể: 
+                <br> margin border padding content
+            </p>
+            <!-- Content là nội dung thông thường -->
+            <p>- Content chỉ là nội dung thông thường</p>
+            <!-- Padding là đệm so với viền -->
+            <p id="padding">- Các thông tin sẽ được ngăn cách với viền. paddding: (top) (right) (bottom) (left)</p>
+            <!-- Border tạo viền xung quanh nội dung -->
+            <p id="border">- Các thông tin sẽ được bao quanh nếu sài border: (loại) (độ dày) (màu)</p>
+            <ul>
+                <!-- Tạo góc -->
+                <li>  
+                    <p>Css border-radius làm bo góc của nội dung lại. border-radius: (top) (right) (bottom) (left)
+                        <br> <img id="border-radius" src="https://mimo.app/i/scream.png">
+                    </p>
+                </li>
+            </ul>
+            <!-- Margin tạo khoảng cách với nội dung xung quanh -->
+            <p id="margin">- Margin tạo khoảng cách với nội dung xung quanh, margin: (top) (right) (bottom) (left)</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Css Functions</h1>
+            <h3>1. Điều chỉnh nội dung</h3>
+            <p>- Sử dụng transform:(Chức năng)</p>
+            <ul>
+                <!-- Xoay nội dung -->
+                <li>rotate(đơn vị độ) để chỉnh độ xoay của nội dung. Để trừ ở trước để quay ngược hướng.
+                    <br> <img id="transform-rotate" src="https://mimo.app/i/scream.png">
+                </li>
+            </ul>
+
+            <h3>2. Chỉnh sửa nội dung</h3>
+            <p>- Sử dụng filter: (chức năng)</p>
+            <ul>
+                <!-- Làm mờ nội dung -->
+                <li>Sử dụng blur(đơn vị đo lường) để làm <strong id="filter-blur">mờ</strong> nội dung hiển thị</li>
+                <!-- Làm nhạt màu hình ảnh -->
+                <li>Sử dụng grayscale(đơn vị %) để làm nhạt màu
+                    <br> <img id="filter-grayscale" src="https://mimo.app/i/scream.png">
+                </li>
+                <!-- Độ trong suốt -->
+                <li>Sử dụng opacity(đơn vị %) làm độ trong suốt 
+                    <br> <img id="filter-opacity" src="https://mimo.app/i/scream.png">
+                </li>
+                <!-- Độ sáng màu -->
+                <li>Sử dụng brightness(đơn vị %) chỉnh độ sáng màu
+                    <br> <img id="filter-brightness" src="https://mimo.app/i/scream.png">
+                </li>
+                <!-- Mức độ bão hòa của màu -->
+                <li>Sử dụng saturate(đơn vị %) chỉnh độ bão hòa của màu
+                    <br> <img id="filter-saturate" src="https://mimo.app/i/scream.png">
+                </li>
+                <!-- Độ tương phản -->
+                <li>Sử dụng contrast(đơn vị %) chỉnh độ tương phản
+                    <br> <img id="filter-contrast" src="https://mimo.app/i/scream.png">
+                </li>
+            </ul>
+
+            <h3>3. Thẻ nhóm phần nhỏ nội dung</h3>
+            <!-- Nhóm phần nhỏ nội dung -->
+            <p>- Sử dụng thẻ span để nhóm <span id="span">phần nhỏ</span> nội dung để css riêng</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">CSS Classes</h1>
+            <h3>1. Đặt để css</h3>
+            <p>- Cú pháp: < tên thẻ class="" id=""...></p>
+            <!-- Sử dụng lớp -->
+            <p>- Sử dụng thuộc tính class để sử dụng khi css. Class cho phép các thẻ khác được sử dụng lại nó. Khi css Class thì đặt . ở phía trước tên.</p>
+            <!-- Sử dụng id -->
+            <p>- Sử dụng thuộc tính id để css. Id chỉ cho phép sử dụng duy nhất một lần.</p>
+            <!-- Chọn nhiều thẻ để css -->
+            <p>Khi css để thẻ 1, thẻ 2,... để css cho thẻ đó mà không cần đặt id hay class.</p>
+            
+            <h3>2. Số liệu đo đạc</h3>
+            <!-- Đo bằng px mặc định web không thể thay đổi kích thước ban đầu -->
+            <p>- Pixel hay kí hiệu là px, được gọi là điểm ảnh nó kết hợp với nhau sẽ tạo nên hình ảnh trên máy tính. Tùy vào mức độ khác nhau thì px khác nhau, thông thường 1px = 0.026458333cm</p>
+            <!-- Đơn vị % khi thay đổi độ rộng cửa sổ web tự thay đổi theo -->
+            <p>- Đơn vị %: Sử dụng để lấy số đo từ lớp cha gần nhất, Vd lớp cha rộng 50px thì khi lớp con để 25% nghĩa là nó rộng 12.5px</p>
+
+            <h3>3. Làm việc với văn bản</h3>
+            <!-- Thay đổi trong văn bản -->
+            <p>- Làm việc với chữ bằng font:</p>
+            <ul>
+                <!-- Làm in nghiêng văn bản -->
+                <li>font-style: kiểu; <span id="font-style">italic</span> để in nghiên</li>
+                <!-- Làm đậm văn bản -->
+                <li>font-weight: kiểu; <span id="font-weight">boild</span> để in đậm</li>
+                <!-- Thay đổi font chữ -->
+                <li>font-family: kiểu; Chọn <span id="font-family">font chữ</span> </li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Css Layout Fundamentals</h1>
+            <h3>1.Hiển thị trên web</h3>
+            <!-- Hiển thị -->
+            <p>Sử dụng thuộc tính display: các tùy chọn;</p>
+            <ul>
+                <!-- Làm các thẻ nằm cùng một dòng -->
+                <li>inline: làm các thẻ nằm cùng một dòng (vd: a)</li>
+                <!-- Xuống hàng thẻ -->
+                <li>block: tạo ra sự riêng tư cho thẻ (vd: p)</li>
+                <!-- Làm thẻ riêng biệt nhưng cùng dòng -->
+                <li>inline-block: các thẻ sẽ được xác định riêng biệt nhưng vẫn nằm cùng dòng (vd: block trong p)</li>
+            </ul>
+
+            <h3>2. Sự trôi nổi</h3>
+            <img src="https://mimo.app/i/bitcoin.png" id="float">
+            <!-- Làm nổi nội dung để duy chuyển -->
+            <p>Sử dụng float: hướng; Sự trôi nổi này sẽ đè lên nội dung</p>
+            <!-- Không bị chèn lên -->
+            <p>Sử dụng clear: hướng; để không bị chèn lên</p>
+
+            <h3>3. Điều hướng nội dung</h3>
+            <!-- Điều hướng nội dung -->
+            <p>Sử dụng position: option;</p>
+            <img src="https://topdev.vn/blog/wp-content/uploads/2020/09/position-trong-css.png">
+        </div>
+
+        <div class="main">
+            <h1 class="title">Flexbox Basics</h1>
+            <h3>1.Định nghĩa</h3>
+            <p>Flexbox là phụ thuộc kích thước của thẻ con với thẻ cha. Phần tử parent được gọi là a flex container. Phần tử bên trong được gọi là flex item, các phần tử này sẽ thay đổi kích thước phù họp với phần tử parent.</p>
+            <p>Đặt css ở phần tử parent là display: flex;</p>
+
+            <h3>2.Hành vi mặc định của flexbox</h3>
+            <p>Mặc định các thẻ con sẽ nằm trên một dòng. Có số từ tối đa là 15 từ, điều chỉnh kích thước ngang cũng không tác động tới nó.</p>
+
+            <h3>3.Chiều hướng cho phần tử</h3>
+            <!-- Hướng của các phần tử con, chỉ có phần tử cha mới được khai báo -->
+            <p>Sử dụng flex-direction: hướng; có 4 hướng, mặc định là row</p>
+            <ul>
+                <!-- ngang trái qua phải -->
+                <li>row: chiều ngang từ phải qua trái</li>
+                <!-- ngang phải qua trái -->
+                <li>row-reverse: chiều ngang từ trái qua phải</li>
+                <!-- dọc trên xuống -->
+                <li>column: chiều từ trên xuống</li>
+                <!-- dọc dưới lên -->
+                <li>column-reverse: chiều dưới trên lên</li>
+            </ul>
+
+            <!-- Xử lý khi bị tràn hoặc thừa -->
+            <h3>4.Phù hợp</h3>
+            <p>Các phần tử trôi về một phía.</p>
+            <p>Sử dụng justify-content: thuộc tính;</p>
+            <ul>
+                <!-- Đẩy lên đầu -->
+                <li>flex-start: đẩy các vị trí lên đầu</li>
+                <img src="	https://dayhoc.pltpro.net/wp-content/uploads/2020/07/4-1024x188.png" alt="Vi du flex-start">
+                <!-- đẩy xuống cuôi -->
+                <li>flex-end: đẩy các vị trí xuống cuối</li>
+                <img src="https://dayhoc.pltpro.net/wp-content/uploads/2020/07/end2-1024x148.png" alt="Vi du flex-end">
+                <!-- tập trung ở giữa -->
+                <li>center: tập trung ở giữa</li>
+                <img src="	https://dayhoc.pltpro.net/wp-content/uploads/2020/07/cen2-1024x166.png" alt="Vi du center">
+                <!-- cân bằng trừ hai đầu -->
+                <li>space-around: Giá trị này cũng làm cho các khoảng cách giữa các phần tử bằng nhau, tuy nhiên nó cũng thay đổi cả vị trí của hai phần tử đầu cuối</li>
+                <img src="https://dayhoc.pltpro.net/wp-content/uploads/2020/07/khoangcach-1024x129.png" alt="Vi du space-around">
+                <!-- cân bằng cả hai đầu -->
+                <li>space-between: Giá trị này giúp cho các khoảng cách giữa các thành phần luôn bằng nhau, tuy nhiên phần tử đầu luôn nằm sát trái, phần tử cuối luôn nằm sát phải</li>
+                <img src="https://dayhoc.pltpro.net/wp-content/uploads/2020/07/b2-1024x157.png" alt="Vi du space-between">
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Flexbox Containers</h1>
+            <h3>1. Căn chỉnh phần tử bên trong</h3>
+            <!-- Căn chính phần tử con -->
+            <p>Sử dụng để điều chỉnh vị trí bắt đầu và căn chỉnh các item bên trong container theo dọc theo trục cross axis, chiều ngang hoặc chiều dọc tùy thuộc vào flex-direction. Mặc định là stretch.</p>
+            <p>Sử dụng align-item: (các thuộc tính)</p>
+            <img src="\HinhAnhHoTroChoHTML\MoTaAlignItem.png" alt="Hinh anh bo tro cho align-item">
+            <ul>
+                <!-- Chèn đầu -->
+                <li>flex-start: Nằm gọn ở đầu</li>
+                <!-- Nằm giữa -->
+                <li>center: Nằm ở giữa</li>
+                <!-- Chèn cuối -->
+                <li>flex-end: Nằm gọn ở cuối</li>
+                <!-- Chèn đủ -->
+                <li>stretch: Phần tử con sẽ chèn đủ theo độ rộng</li>
+            </ul>
+
+            <h3>2. Ngăn chèn phần tử</h3>
+            <img src="	https://st.quantrimang.com/photos/image/2019/05/14/flexbox-7.jpg" alt="Vi du cong dung flex-wrap">
+            <!-- Giúp điều chỉnh thích hợp với các phần tử -->
+            <p>Sử dụng flex-wrap để ngăn việc các phần tử bị chèn ra ngoài. Thuộc tính mặc định là nowrap - Có thể bị chèn; wrap - Sẽ xuống dòng nếu bị chèn; wrap-reverse - Xuống dòng đồng thời đảo thứ tự trên dưới</p>
+
+            <h3>3. Căn chỉnh các phần tử bên trong</h3>
+            <img src="\HinhAnhHoTroChoHTML\MoTaAlignContent.png" alt="Hinh anh bo tro cho align-content">
+            <!-- Căn chỉnh cho kích thước bên trong -->
+            <p>Thuộc tính align-content sử dụng để căn chỉnh khoảng cách các item bên trong container theo dọc theo trục cross axis, chiều ngang hoặc chiều dọc tùy thuộc vào flex-direction.</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Flexbox Items</h1>
+            <!-- Độ dài phần tử bên trong -->
+            <h3>1. Điều chỉnh độ dài item</h3>
+            <img src="https://st.quantrimang.com/photos/image/2019/05/16/flexbox-56.jpg" alt="Dieu chinh ban dau">
+            <p>Thuộc tính flex-basis sử dụng để xác định độ dài ban đầu của một item. flex-basis: length | auto; /* mặc định là auto */</p>
+           
+            <!-- Mức độ lắp đầy của phần tử -->
+            <h3>2. Điều chỉnh độ rộng bao phủ</h3>
+            <img src="https://st.quantrimang.com/photos/image/2019/05/15/flexbox-49.jpg" alt="Dieu chinh do rong kich thuoc">
+            <p>Thuộc tính flex-grow cho phép các phần tử giãn theo độ rộng của container. Phần tử nào được đặt giá trị càng lớn sẽ bao phủ phần trống còn lại nhiều hơn trong khung chứa cha. 0 là không có gì cả sẽ bị chèn ép.</p>
+
+            <!-- Co lại -->
+            <h3>3. Co phần tử lại</h3>
+            <p>Thuộc tính flex_shrink giúp tự động co lại khi thay đổi độ rộng của container. Giá trị cho vào càng giảm thì mức độ ưu tiên co càng giảm.</p>
+
+            <!-- Gom các thuộc tính flex lại -->
+            <h3>4. Gom nhiều loại flex</h3>
+            <p>Thuộc tính flex sử dụng để gộp chung ba thuộc tính flex-grow, flex-shrink và flex-basis.</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Css Grid</h1>
+            <p>Grid cho phép sắp xếp các thành phần trên một trang theo các vùng. Đầu tiên phải thiết lập display trong css là grid</p>
+            <ul>
+                <!-- Grid line -->
+                <li><p>Với CSS grid, các đường nằm giữa các cột được gọi là column line, trong khi các đường nằm giữa các hàng được gọi là row line. Bắt đầu đánh số từ 1. Đây là grid 3x3</p></li>
+                <img src="https://res.cloudinary.com/duqeezi8j/image/upload/f_auto/v1522576022/i3yuE1s_snye0v.jpg" alt="Vi du cho grid line">
+
+                <!-- Thiết lập ban đầu -->
+                <li><p>Ban đầu chưa có gì cả nên chúng sẽ nằm chồng lên nhau</p></li>
+                <div class="wrapper_banDau">
+                    <div class="item1" style="background-color: aqua;">1</div>
+                    <div class="item2" style="background-color: blue;">2</div>
+                    <div class="item3" style="background-color: brown;">3</div>
+                    <div class="item4" style="background-color: burlywood;">4</div>
+                    <div class="item5" style="background-color: cornflowerblue;">5</div>
+                    <div class="item6" style="background-color: darkgoldenrod;">6</div>
+                </div>
+                
+                <!-- Tùy chỉnh dòng, cột -->
+                <li><p>Chúng ta sử dụng thuộc tính grid-template-row và grid-template-column để điều chỉnh hiện thị trên dòng và cột. Số lượng giá trị điền vào sẽ quyết định số lượng cột, dòng hiển thị.</p></li>
+                <div class="wrapper dieuChinhCotDong">
+                    <div class="item1" style="background-color: aqua;">1</div>
+                    <div class="item2" style="background-color: blue;">2</div>
+                    <div class="item3" style="background-color: brown;">3</div>
+                    <div class="item4" style="background-color: burlywood;">4</div>
+                    <div class="item5" style="background-color: cornflowerblue;">5</div>
+                    <div class="item6" style="background-color: darkgoldenrod;">6</div>
+                </div>
+
+                <!-- Thiết lập nhanh kích thước cho nhiều cột, dòng -->
+                <li><p>Thiết lập nhanh sử dụng repeat(số lượng áp dụng, kích thước), thiết lập nhanh cho nhiều cột, dòng</p></li>
+
+                <!-- Sử dụng kết hợp -->
+                <li><p>Thiết lập cho cột và dòng trên một dòng bằng cách sử dụng grid-template: none | grid-template-rows / grid-template-columns; </p></li>
+                <p>3 cột 2 dòng</p>
+                <div class="wrapper tomNhanhDongCot_3cot_2dong">
+                    <div class="item1" style="background-color: aqua;">1</div>
+                    <div class="item2" style="background-color: blue;">2</div>
+                    <div class="item3" style="background-color: brown;">3</div>
+                    <div class="item4" style="background-color: burlywood;">4</div>
+                    <div class="item5" style="background-color: cornflowerblue;">5</div>
+                    <div class="item6" style="background-color: darkgoldenrod;">6</div>
+                </div>
+
+                <!-- Thiết lập khoảng cách giữa các item -->
+                <li><p>Thiết lập khoảng cách giữa các phần tử. Khác với margin, gap có thể áp dụng chỉ với các item.</p></li>
+                <p>Sự khác nhau của margin và gap</p>
+                <p><strong>Của margin</strong></p>
+                <div class="wrapper voiMargin">
+                    <div class="item1 voiMargin" style="background-color: aqua;">1</div>
+                    <div class="item2 voiMargin" style="background-color: blue;">2</div>
+                    <div class="item3 voiMargin" style="background-color: brown;">3</div>
+                    <div class="item4 voiMargin" style="background-color: burlywood;">4</div>
+                    <div class="item5 voiMargin" style="background-color: cornflowerblue;">5</div>
+                    <div class="item6 voiMargin" style="background-color: darkgoldenrod;">6</div>
+                </div>
+                <p><strong>Của gap</strong></p>
+                <div class="wrapper voiGap">
+                    <div class="item1" style="background-color: aqua;">1</div>
+                    <div class="item2" style="background-color: blue;">2</div>
+                    <div class="item3" style="background-color: brown;">3</div>
+                    <div class="item4" style="background-color: burlywood;">4</div>
+                    <div class="item5" style="background-color: cornflowerblue;">5</div>
+                    <div class="item6" style="background-color: darkgoldenrod;">6</div>
+                </div>
+                <p>Sử dụng row-gap: kích thước, thiết lập kích thước giữa các dòng</p>
+                <p>Sử dụng column-gap: kích thước, thiết lập kích thước giữa các cột</p>
+                <p>Có thể sử dụng tắt là gap: (kích thước dòng) (kích thước cột). Hoặc gap: (kích thước), sẽ áp dụng cho cả hai.</p>
+
+                <!-- Thiết lập bao phủ của riêng từng phần tử -->
+                <li><p>Với mỗi item, để thay đổi kích thước cũng như vị trí, chúng ta sẽ thay đổi thuộc tính grid-column và grid-row.</p></li>
+                <p>Tạo grid 3x3. Thiết lập cho item1 là grid-column-start: 1; và grid-column-end: 4; nó sẽ bao phủ từ 1 tới 3. Có thể sử dụng tương tự với dòng.</p>
+                <div class="wrapper baoPhu">
+                    <div class="item1 baoPhuCuaItem1" style="background-color: aqua;">1</div>
+                    <div class="item2" style="background-color: blue;">2</div>
+                    <div class="item3" style="background-color: brown;">3</div>
+                    <div class="item4" style="background-color: burlywood;">4</div>
+                    <div class="item5" style="background-color: cornflowerblue;">5</div>
+                    <div class="item6" style="background-color: darkgoldenrod;">6</div>
+                </div>
+                <p>Có thể viết gọn là grid-column:(số cột bắt đầu chiếm) / (số cột kết thúc trừ 1), tương tự với dòng.</p>
+                <p>Sử dụng span (số cột/dòng giãn) để chỉ định số dòng, cột giãn ra mà không cần chỉ đến vị trí kết thúc</p>
+
+                <!-- Thiết lập trong khu vực -->
+                <li><p>Sử dụng grid-area: tên; đặt tên cho một mục để nó có thể được tham chiếu bởi một mẫu được tạo bằng thuộc tính grid-template-areas. Ngoài ra, thuộc tính này có thể được sử dụng như một cách viết tắt thậm chí còn ngắn hơn. Có thể sử dụng trong <strong>thiết kế layout</strong>.</p></li>
+
+                <!-- Căn chỉnh trong khu vực -->
+                <li><p>Căn chỉnh một mục lưới bên trong một ô . Cú pháp:  justify-self: start | end | center | stretch; -> Cho dòng; align-self: start | end | center | stretch; -> Cho cột</p></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Bootstrap</h1>
+            <!-- Định nghĩa bootstrap -->
+            <h3>1. Bootstrap</h3>
+            <p>Bootstrap is a free front-end framework for faster and easier web development
+               <br> Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+                <br> Bootstrap also gives you the ability to easily create responsive designs</p>
+            <!-- Bootstrap cơ bản -->
+            <h3>2. Sử dụng bootstrap cho css</h3>
+            <p>Nếu không muốn tự tải xuống và lưu trữ Bootstrap, có thể đưa nó vào từ CDN (Mạng phân phối nội dung). Truyền nó vào link, đường dẫn: <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min">"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min"</a></p>
+            <p>Bootstrap chứa các lớp được xác định trước, dùng dùng cho css.</p>
+            <!-- Các lớp có sẵn trong bootstrap -->
+            <ul>
+                <li>container: Chứa các phần tử khác</li>
+                <li>container-fluid: Có kích thước to hơn</li>
+                <li>navbar: Định nghĩa cho thẻ nav</li>
+                <li>navbar-expand-md: Để làm cho thanh điều hướng phản hồi trên cả máy tính để bàn và thiết bị di động </li>
+                <li>navbar-brand: Thêm vào img, để bao gồm một biểu tượng trong thanh điều hướng</li>
+                <li>nav-link: Tạo khoảng trống giữa các đường dẫn</li>
+                <li>navbar-nav: Định nghĩa cho danh sách</li>
+            </ul>
+
+            <!-- Bootstrap grid -->
+            <h3>3. Bootstrap grid</h3>
+            <p>Thiết kế giống dạng grid, phân các dòng và cột. Sử dụng các lớp:</p>
+            <ul>
+                <li>row: Hàng</li>
+                <li>col: Cột. Gán theo dạng col-số để hiện thị 
+                    <br> <img src="\HinhAnhHoTroChoHTML\Bootstrap-column.png" alt="Hình ảnh phân chia column trong bootstrap">
+                </li>
+                <li>offset: Dạng offset-số tạo độ giãn giữa các ô</li>
+            </ul>
+
+            <!-- Bootstrap với nội dung -->
+            <h3>4. Bootstrap với nội dung</h3>
+            <p>Sử dụng các lớp với văn bản</p>
+            <ul>
+                <li>lead: Làm cho một đoạn văn nổi bật</li>
+                <li>text-uppercase hoặc text-lowercasse: Viết hoa hoặc viết thường</li>
+                <li>text-primary: Văn bản quan trọng</li>
+                <li>bg-primary: Màu nền xanh</li>
+                <li>text-while: Chữ trắng</li>
+                <li>text-center: Canh giữa các nội dung</li>
+                <li>text-success: Đổi màu chữ thành màu xanh lá</li>
+                <li>m-số, p-số, shadow: Tạo margin, paddings và shadow</li>
+            </ul>
+
+            <!-- Sử dụng bootstrap với nút bấm -->
+            <h3>5. Bootstrap với nút bấm</h3>
+            <p>Sử dụng các lớp với button:</p>
+            <ul>
+                <li>btn: Có thể khai báo cho button, input hoặc a</li>
+                <li>btn-success: Chỉ ra một số hành động mong muốn khi nút được nhấp</li>
+                <li>btn-danger: Chỉ ra một số nguy hiểm khi nút được nhấp vào về nội dung</li>
+                <li>btn-lg hoặc btn-sm: To hơn hoặc nhỏ hơn</li>
+            </ul>
+
+            <!-- Bootstrap card -->
+            <h3>6. Bootstrap card</h3>
+            <p>Làm cho hình ảnh và văn bản hòa trộn với nhau. Các lớp:</p>
+            <ul>
+                <li>card: Khai báo bắt đầu sử dụng</li>
+                <li>card-img-top: Hình ảnh nằm trên đầu</li>
+                <li>card-body: Phần thân</li>
+                <li>card-header: Tiêu đề</li>
+                <li>card-footer: Phần đuôi</li>
+            </ul>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="main">
+            <h1 class="title">JavaScript Basics</h1>
+
+            <!-- Sử dụng -->
+            <h3>1. Sử dụng</h3>
+            <p>Sử dụng thẻ script để gọi ra sử dụng. Có thể nằm trong thẻ head hoặc body.</p>
+
+            <!-- Ghi chú -->
+            <h3>2. Ghi chú</h3>
+            <p>Sử dụng // để ghi chú</p>
+
+            <!-- Biến -->
+            <h3>3. Biến</h3>
+            <p>Biến là vùng chứa để lưu trữ dữ liệu. Cú pháp: let name = value;. Muốn một quy tắc chung: luôn khai báo các biến bằng const, các biến này sẽ không thể cập nhật dữ liệu.</p>
+            <p>Sử dụng console.log(truyền vào chuỗi, tên biến), để in ra màn hình</p>
+
+            <!-- Toán tử -->
+            <h3>4. Toán tử</h3>
+            <img src="\HinhAnhHoTroChoHTML\toanTu_javaScript.png" alt="toanTu">
+
+            <!-- Tính đúng, sai -->
+            <h3>5. Tính đúng, sai</h3>
+            <p>Sử dụng true hoặc false. Sử dụng ! để phủ định lại.</p>
+
+            <!-- Toán tử so sánh -->
+            <h3>6. Toán tử so sánh</h3>
+            <img src="\HinhAnhHoTroChoHTML\toanTuSoSanh_javaScript.png" alt="toanTuSoSanh">
+            <p>Phân biệt == và ===</p>
+            <img src="https://st.quantrimang.com/photos/image/2020/02/11/su-khac-biet-giua-toan-tu-va-trong-javascript.jpg" alt="phanBiet==va===">
+        </div>
+
+        <div class="main">
+            <h1 class="title">Conditionals</h1>
+
+            <!-- Cú pháp if else -->
+            <h3>1. Biểu thức điều kiện</h3>
+            <p>Cú pháp: if(điều kiện 1){}else if(điều kiện 2){}else{}</p>
+        </div>
+
+        <div class="main">
+            <h1 class="tile">Loop</h1>
+
+            <!-- Vòng lặp -->
+
+            <!-- While -->
+            <h3>1. Vòng while</h3>
+            <p>Cú pháp:  while(điều kiện){}</p>
+
+            <!-- For -->
+            <h3>2. Vòng for</h3>
+            <p>Cú pháp: for(khai báo biến;điều kiện;tăng/giảm){}</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Array</h1>
+
+             <!-- Mảng -->
+             <h3>1. Cấu trúc mảng</h3>
+             <p>Tạo mảng tên = [truyền giá trị]. Các phần tử trong mảng phải cùng dạng. Đánh số từ vị trí 0.</p>
+
+             <!-- Lấy, xóa phần tử -->
+             <h3>2. Lấy, xóa phần tử</h3>
+             <p>Sử dụng tên.push(truyền phần tử) để thêm phần tử vào cuối mảng. tên.pop() lấy phần tử cuối mảng đồng thời xóa nó khỏi mảng.</p>
+
+             <!-- Độ dài -->
+             <h3>3. Độ dài</h3>
+             <p>Sử dụng tên.length để lấy độ dài của mảng hiện tại.</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Function</h1>
+
+            <!-- Tạo hàm -->
+            <h3>1. Tạo hàm</h3>
+            <p>Sử dụng funtion tên(tham số){}. Sử dụng return phần tử nếu muốn hàm trả về gì đó.</p>
+        </div>
+
+        <div class="main">
+            <h1 class="title">Object</h1>
+
+            <!-- Khởi tạo đối tượng -->
+            <h3>1. Khởi tạo đối tượng</h3>
+            <p>Các thuộc tính đặt trong tên = {thuộc_tính: giá trị, thuộc tính_2: giá trị,...}; hoặc các thuộc tính có thể gọi tới hàm khác</p>
+        </div>
+    </body>
+</html>

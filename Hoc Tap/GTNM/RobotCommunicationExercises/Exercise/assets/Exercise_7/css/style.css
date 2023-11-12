@@ -1,0 +1,16 @@
+.ex7-button {
+    padding: 12px;
+}
+
+.ex7-paragraph {
+    margin-top: 12px;
+    background-color: yellow;
+    border: 4px solid purple;
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+.ex7-paragraph p {
+    padding: 8px 16px 0 8px;
+}
